@@ -8,6 +8,7 @@ require('dotenv').config();
 import { UserModule } from './user/user.module';
 import { AuthModule } from 'auth/auth.module';
 import { RoleModule } from 'role/role.module';
+import { InteropModule } from './interop/interop.module';
 
 @Module({
   imports: [
@@ -26,6 +27,7 @@ import { RoleModule } from 'role/role.module';
     AuthModule,
     RoleModule,
     UserModule,
+    InteropModule,
   ],
   controllers: [AppController],
   providers: [AppService],

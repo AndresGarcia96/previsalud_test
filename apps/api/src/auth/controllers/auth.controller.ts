@@ -26,19 +26,19 @@ export class AuthController {
 
   // REGISTER //
 
-  @Auth(RolesEnum.SUPER_ADMIN)
+  // @Auth(RolesEnum.SUPER_ADMIN)
   @Post('/register-super-admin')
   async registerSuperAdmin(@Body() dto: CreateUserDto) {
     return this.authService.registerUserWithRole(RolesEnum.SUPER_ADMIN, dto);
   }
 
-  @Auth(RolesEnum.SUPER_ADMIN)
+  // @Auth(RolesEnum.SUPER_ADMIN)
   @Post('/register-admin')
   async registerAdmin(@Body() dto: CreateUserDto) {
     return this.authService.registerUserWithRole(RolesEnum.ADMIN, dto);
   }
 
-  @Post('/registerUser')
+  // @Post('/registerUser')
   async registerUser(@Body() dto: CreateUserDto) {
     return this.authService.registerUserWithRole(RolesEnum.USER, dto);
   }
