@@ -1,0 +1,30 @@
+{
+  "name": "fenix",
+  "version": "1.0.0",
+  "private": true,
+  "description": "<img src=\"./apps/client/public/logos/fenix-ver-naranja-sin-fondo-ok.png\" alt=\"logo-fenix_2\">",
+  "main": "index.js",
+  "dependencies": {
+    "turbo": "^2.7.2",
+    "turbo-windows-64": "^2.7.2"
+  },
+  "devDependencies": {
+    "turbo": "^2.7.2"
+  },
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "npm@11.7.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}

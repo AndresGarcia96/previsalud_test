@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+}
+
+/* Estilo global para el scrollbar */
+
+::-webkit-scrollbar {
+  width: 10.3px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f7f7f7;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #a7afba;
+  border-radius: 22px;
+  border: 3.1px solid #f7f7f7;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00404f;
+}
+
+/* Padding de las tarjetas */
+
+.ant-card-small > .ant-card-body {
+  padding: 8px !important;
+}
+
+/* Margin de los botones de modal de confirmación */
+
+:where(.ant-modal-confirm) .ant-modal-confirm-btns {
+  margin-top: 7px !important;
+}
+
+/* Estiliza el dropdown del filtro en las tablas */
+
+.ant-dropdown .ant-table-filter-dropdown .ant-dropdown-menu {
+  max-height: 130px;
+  overflow-x: auto;
+  overflow-y: auto;
+}
