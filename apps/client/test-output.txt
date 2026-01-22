@@ -1,0 +1,24 @@
+
+> client@0.1.0 test
+> jest --verbose --no-cache
+
+PASS src/__tests__/app/LoginPage.tsx
+  UsersLoginPage - Unit Tests
+    Component Structure
+      ÔêÜ should have user tab functionality (3 ms)
+      ÔêÜ should validate login page elements (1 ms)
+    Authentication Flow
+      ÔêÜ should support user authentication (1 ms)
+      ÔêÜ should handle unauthenticated state (1 ms)
+    Redux Integration
+      ÔêÜ should manage page loading state
+      ÔêÜ should dispatch setIsPageLoading action (2 ms)
+    UI Components
+      ÔêÜ should render tabs component
+      ÔêÜ should have background image
+
+Test Suites: 1 passed, 1 total
+Tests:       8 passed, 8 total
+Snapshots:   0 total
+Time:        1.831 s
+Ran all test suites.
