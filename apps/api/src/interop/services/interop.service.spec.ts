@@ -127,7 +127,7 @@ describe('InteropService', () => {
 
   describe('dispatch - Idempotencia', () => {
     it('debe retornar respuesta existente si el requestId ya fue procesado', async () => {
-      // Arrange
+      // Arrange / Arreglar
       const requestId = uuidv4();
       const userId = uuidv4();
       const dispatchDto: DispatchInteropDto = {
@@ -149,10 +149,10 @@ describe('InteropService', () => {
 
       mockAuditRepository.findOne.mockResolvedValue(existingAudit);
 
-      // Act
+      // Act / Actuar
       const result = await service.dispatch(dispatchDto, requestId, userId);
 
-      // Assert
+      // Assert / Afirmar
       expect(result.requestId).toBe(requestId);
       expect(result.status).toBe(InteropStatusEnum.SENT);
       expect(mockAuditRepository.findOne).toHaveBeenCalledWith({
